@@ -1,0 +1,57 @@
+<div class=" mx-auto p-6 bg-white rounded-lg shadow-md">
+    <h1 class="text-3xl font-bold text-center mb-6 text-blue-600">Introduction to Data Binding in Angular</h1>
+    <p class="text-lg mb-4">
+        Data Binding in Angular is a mechanism that allows communication between the component and the view (HTML).
+        It enables dynamic interaction where changes in the component automatically reflect in the view and vice versa.
+        Angular provides multiple types of binding to achieve this, allowing for powerful and flexible UI development.
+    </p>
+
+    <div class="space-y-6">
+        <h2 class="text-2xl font-semibold text-blue-500">Types of Data Binding in Angular:</h2>
+
+        <div class="space-y-4">
+            <div>
+<!--                <h3 class="text-xl font-semibold text-gray-700">1. Interpolation ({{ }})</h3>-->
+                <p>Binds component data to HTML element content.</p>
+                <!-- Escape curly braces with HTML entities -->
+<!--                <code class="block bg-gray-200 p-2 rounded mt-2">&lt;p&gt;{{ message }}&lt;/p&gt;</code>-->
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-gray-700">2. Property Binding ([property]="value")</h3>
+                <p>Binds a property of an HTML element to a component property.</p>
+                <code class="block bg-gray-200 p-2 rounded mt-2">&lt;img [src]="imageSrc"&gt;</code>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-gray-700">3. Event Binding ((event)="method()")</h3>
+                <p>Binds an event, such as a button click, to a component method.</p>
+                <code class="block bg-gray-200 p-2 rounded mt-2">&lt;button (click)="onClick()"&gt;Click&lt;/button&gt;</code>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-gray-700">4. Two-Way Binding ([(ngModel)]="property")</h3>
+                <p>Binds component data to a form control and vice versa.</p>
+                <code class="block bg-gray-200 p-2 rounded mt-2">&lt;input [(ngModel)]="name"&gt;</code>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-gray-700">5. Class Binding ([class.className]="condition")</h3>
+                <p>Dynamically adds or removes CSS classes based on component data.</p>
+                <code class="block bg-gray-200 p-2 rounded mt-2">&lt;div [class.active]="isActive"&gt;&lt;/div&gt;</code>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-gray-700">6. Style Binding ([style.property]="value")</h3>
+                <p>Binds inline styles of an HTML element to component data.</p>
+                <code class="block bg-gray-200 p-2 rounded mt-2">&lt;div [style.background-color]="bgColor"&gt;&lt;/div&gt;</code>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-gray-700">7. Attribute Binding ([attr.attribute]="value")</h3>
+                <p>Binds an attribute of an HTML element to a component property.</p>
+                <code class="block bg-gray-200 p-2 rounded mt-2">&lt;button [attr.aria-label]="buttonLabel"&gt;Click&lt;/button&gt;</code>
+            </div>
+        </div>
+    </div>
+</div>
